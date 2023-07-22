@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jalabiya ADV & Outdoor</title> <!--For create title on the top website-->
-    <link rel="stylesheet" href="login.css"> <!--For connecting to  style css-->
+    <link rel="stylesheet" href="sign-up.css"> <!--For connecting to  style css-->
     <link rel="icon" type="logo/png" href="aset/Logo.png"> <!-- displayed logo on the top web page-->
     <!--Import font from google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,39 +25,46 @@
         <div class="right">
             <form>
                 <section class="copy">
-                    <h2>Login</h2>
+                    <h2>Sign Up</h2>
                     <div class="login-container">
                         <img src="aset/Logo.png">
-                        <P>Belum memiliki akun?  <a href="sign-up.html"><strong>Daftar</strong></a></P>
+                        <P>Sudah memiliki akun?  <a href="#login.html"><strong>Masuk</strong></a></P>
                     </div>
                 </section>
                 <!-- Full Name -->
-                <!-- <div class="input-container name">
+                <div class="input-container name">
                     <label for="fname">Nama Lengkap</label>
                     <input id="fname" name="fname" type="text">
-                </div> -->
+                </div>
 
                 <!-- Email -->
-                <!-- <div class="input-container email">
+                <div class="input-container email">
                     <label for="email">Email</label>
                     <input id="email" name="email" type="email">
-                </div> -->
+                </div>
 
                 <!-- user name -->
-                <div class="input-container username">
+                <!-- <div class="input-container username">
                     <label for="username">Nama Pengguna</label>
                     <input id="username" name="username" type="username">
-                </div>
+                </div> -->
 
                 <!-- Password -->
                 <div class="input-container password">
                     <label for="password">Katasandi</label>
                     <!-- <input id="password" name="password" placeholder="Gunakan minimal 8 karakter" type="password">  -->
                     <input id="password" name="password" type="password"> 
-                    <img class="far fa-eye-slash"></img>
+                    <!-- <img class="far fa-eye-slash"></img> -->
                 </div>
+
                 
-                <button  href="home.html" class="signup-btn">Masuk</button>
+                <div class="input-container password-konfirmasi">
+                    <label for="password">konfirmasi Katasandi</label>
+                    <input id="password-konfirmasi" name="password-konfirmasi" type="password"> 
+                </div>
+
+                
+                <button class="signup-btn">Daftar</button>
                 <section class="copy legal">
                     <p><span class="small">Dengan melanjutkan, Anda setuju untuk menerima <br> <a href="">Kebijakan Privasi</a> & <a href="#">Ketentuan layanan</a></span></p>
                 </section>
