@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+:root{
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    --primary-color: #008CD8;
+}
+
+ body{
+    font-family: 'Montserrat' sans-serif ;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-weight: 700px;
+} 
+
+h1{
+    font-size: 2.25rem;
+    font-weight:700;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight:700;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color)
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.small {
+    font-size: 80%;
+    text-align: center;
+}
+
+/* Main split screen layout using flexbox */
+
+.Split-screen {
+    display: flex;
+    flex-direction: column;
+}
+.left, .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    background-color: #f3f3f3;
+}
+.left {
+    height: 200px;
+    background-image: url(aset/bg\ login.png);
+    background-size: cover;
+}
+
+.left .copy {
+    color: white;
+    text-align: center;
+    -webkit-font-smoothing :antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+.left .copy h1 {
+    text-shadow: -1px -1px 1px #000,  
+                1px -1px 1px #000,
+               -1px 1px 1px #000,
+                1px 1px 1px #000;
+
+}
+
+.left p {
+    font-weight: 400;
+}
+
+.right .copy {
+    color: black;
+    text-align: center;
+    /* justify-content: center; */
+}
+
+.right .copy p {
+    margin: 1.5rem;
+    font-size: 0.875rem;
+}
+
+.right form {
+    width:328px ;
+}
+
+
+form input[type="username"],
+form input[type="password"]{
+    display: block;
+    width: 100%;
+    height: 30px ;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    padding:lem;
+    margin-bottom: 10px;
+    font-size: 0.875rem;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 0.1rem;
+    font-size: 0.75rem;
+}
+
+.input-container .password {
+    position: relative;
+}
+
+/* for setting position icon passsword eye */
+.input-container .password i {
+    position: absolute;
+    top: 42px;
+    right:16px;
+}
+
+
+.signup-btn {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    width: 100%;
+    color: #f3f3f3;
+    height: 30px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+  
+.signup-btn:hover {
+    background: #05a8ff;
+    cursor: pointer;
+}
+
+@media screen and (min-width :900px) {
+    .Split-screen{
+        flex-direction: row;
+        height :100vh
+    }
+    .left,
+    .right {
+        display :flex;
+        width: 50%;
+        height: auto;
+    }
+        
+}
+
+

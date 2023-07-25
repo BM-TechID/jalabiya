@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Halaman Register</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+          <h1>Register</h1>
+            <!-- Add action attribute to the form -->
+            <form action="register.php" method="post">
+                <label>Username</label>
+                <br>
+                <input type="text" name="username"> <!-- Add name attribute to each input field -->
+                <br>
+                <label>Email</label>
+                <br>
+                <input type="text" name="email"> <!-- Add name attribute to each input field -->
+                <br>
+                <label>Password</label>
+                <br>
+                <input type="password" name="password"> <!-- Add name attribute to each input field -->
+                <br>
+                <button type="submit">Register</button> <!-- Add type="submit" to the button -->
+                <p> Sudah punya akun?
+                  <a href="index.html">Login di sini</a>
+                </p>
+            </form>
+        </div>
+    </body>
+</html>

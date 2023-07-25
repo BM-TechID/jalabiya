@@ -1,42 +1,18 @@
 <!-- Tutorial youtube:  https://www.youtube.com/watch?v=fHqjQBRQxUI&ab_channel=XOPIXEL -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- basic -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- mobile metas -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-        <!-- judul -->
-        <title>Jalabiya ADV</title>
-        <meta name="keywords" content="">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <!-- bootstrap css -->
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <!-- style css -->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <!-- Responsive-->
-        <link rel="stylesheet" href="css/responsive.css">
-        <!-- fevicon -->
-        <link rel="icon" href="images/fevicon.png" type="image/gif" />
-        <!-- Scrollbar Custom CSS -->
-        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-        <!-- Tweaks for older IEs-->
-        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-        <!-- fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
-        <!-- font awesome -->
-        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!--  -->
-        <!-- owl stylesheets -->
-        <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
-        <link rel="stylesheet" href="css/owl.carousel.min.css">
-        <link rel="stylesoeet" href="css/owl.theme.default.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-     </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jalabiya ADV & Outdoor</title> <!--For create title on the top website-->
+    <link rel="stylesheet" href="main.css"> <!--For connecting to  style css-->
+    <link rel="icon" type="logo/png" href="../images/Logo.png"> <!-- displayed logo on the top web page-->
+    <!--Import font from google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
 <body>
     <div class="Split-screen">
         <div class="left">
@@ -47,18 +23,19 @@
         </div>
         
         <div class="right">
-            <form>
+            <form action="register.php" method="post">
                 <section class="copy">
                     <h2>Sign Up</h2>
                     <div class="login-container">
-                        <img src="images/Logo.png">
-                        <P>Sudah memiliki akun?  <a href="login.html"><strong>Masuk</strong></a></P>
+                        <img src="../images/Logo.png">
+                        <P>Sudah memiliki akun?  <a href="index.html"><strong>Masuk</strong></a></P>
                     </div>
                 </section>
-                <!-- Full Name -->
-                <div class="input-container name">
-                    <label for="fname">Nama Lengkap</label>
-                    <input id="fname" name="fname" type="text">
+                <!-- Full Name -->  
+                <div class="input-container username">
+                    <label for="username">Username</label>
+                    <input id="username" name="username" type="username">
+                    <!-- <input id="username" name="username" type="text"> -->
                 </div>
 
                 <!-- Email -->
@@ -75,7 +52,7 @@
 
                 <!-- Password -->
                 <div class="input-container password">
-                    <label for="password">Katasandi</label>
+                    <label for="password">Password</label>
                     <!-- <input id="password" name="password" placeholder="Gunakan minimal 8 karakter" type="password">  -->
                     <input id="password" name="password" type="password"> 
                     <!-- <img class="far fa-eye-slash"></img> -->
@@ -83,16 +60,17 @@
 
                 
                 <div class="input-container password-konfirmasi">
-                    <label for="password">konfirmasi Katasandi</label>
+                    <label for="password">konfirmasi Password</label>
                     <input id="password-konfirmasi" name="password-konfirmasi" type="password"> 
                 </div>
 
                 
-                <a href="index.html" class="signup-btn">Masuk</a>
-
+                <button class="signup-btn">Daftar</button>
                 <section class="copy legal">
                     <p><span class="small">Dengan melanjutkan, Anda setuju untuk menerima <br> <a href="">Kebijakan Privasi</a> & <a href="#">Ketentuan layanan</a></span></p>
                 </section>
+           
+
 
                 <!---->
                 <!-- <div class="input-container cta">
